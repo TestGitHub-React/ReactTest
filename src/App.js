@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BoxesContainer from './Components/BoxesContainer';
+import GameStats from './Components/GameStats';
+import LevelSelector from './Components/LevelSelector';
+import  './Styles/Main.css';
+import {BrowserRouter} from 'react-router-dom'
+import {Route} from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+
+    
+    <Route path="/game" exact render={()=>
+    <div className="main_container">
+     <BoxesContainer/>
+      <GameStats/>
+      </div>}/>
+    {//  <BoxesContainer/>
+      //<GameStats></GameStats>
+    }
+    <Route path="/" exact component={LevelSelector}/>
+    
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,9 @@
+.main_container{
+  position: relative;
+  height:99vh;
+    top:1vh;
+    bottom: 0;
+    margin:0 auto;
+    overflow: hidden;
+    min-width: 100vh;
+  }

@@ -1,0 +1,18 @@
+.Box{
+    position:relative;
+    background-color: #f0eee9;
+    width:100%;
+    height:100%;
+  }
+  
+  .ShouldBeClicked{
+      background-color: #196e0f;
+  }
+  
+  .Next{
+      background-color: rgb(224, 224, 0);
+  }
+  
+  .Clicked{
+      background-color: #7ad1dd;
+  }
